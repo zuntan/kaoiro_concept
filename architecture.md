@@ -6,22 +6,39 @@ Native版とWASM版でコードを最大限共有できるよう、コアロジ�
 
 ```mermaid
 graph TD
+    %% スタイル定義 (GitHub Dark Mode対応)
+    classDef shared fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000
+    classDef native fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000
+    classDef wasm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    classDef node fill:#fff,stroke:#333,stroke-width:1px,color:#000
+
     subgraph "Shared Core (Native & WASM)"
+        direction TB
         GestureLogic[Gesture Logic]
         SharedState[Shared State (Arc RwLock)]
         UI_Components[egui Components]
     end
 
     subgraph "Native Specific"
+        direction TB
         OpenCV[OpenCV Camera]
         Enigo[Enigo Input]
         EframeNative[eframe Native Runner]
     end
 
     subgraph "WASM Specific (Future)"
+        direction TB
         WebCam[Web API Camera]
         WebCanvas[Web Canvas Runner]
     end
+
+    %% クラス適用
+    class GestureLogic,SharedState,UI_Components node
+    class OpenCV,Enigo,EframeNative node
+    class WebCam,WebCanvas node
+
+    %% サブグラフへのスタイル適用はMermaidのバージョンによるが、
+    %% 基本的にノードが見えればOK。
 
     %% Data Flow (Native)
     OpenCV -->|Processed Frame| SharedState

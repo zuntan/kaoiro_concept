@@ -5,12 +5,25 @@
 
 ```mermaid
 graph TD
+    %% スタイル定義 (視認性向上)
+    classDef window fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000
+    classDef area fill:#e0e0e0,stroke:#666,stroke-width:1px,color:#000
+    classDef overlay fill:#ffeb3b,stroke:#fbc02d,stroke-width:2px,color:#000,stroke-dasharray: 5 5
+    classDef text fill:#fff,stroke:none,color:#333
+
     subgraph MainWindow ["Main Window"]
+        direction TB
         subgraph PreviewArea ["Camera Preview (Processed)"]
             IconOverlay["Reaction Icon (Face Icon)"]
         end
         StatusText["Current Action (e.g., 'Typing YES...')"]
     end
+
+    %% クラス適用
+    class MainWindow window
+    class PreviewArea area
+    class IconOverlay overlay
+    class StatusText text
 ```
 
 - **PreviewArea**: プライバシー加工済みのカメラ映像。
@@ -22,19 +35,36 @@ graph TD
 
 ```mermaid
 graph TD
-    subgraph SettingsPanel ["Settings"]
+    %% スタイル定義
+    classDef panel fill:#f0f4c3,stroke:#333,stroke-width:2px,color:#000
+    classDef section fill:#fff,stroke:#999,stroke-width:1px,color:#000
+    classDef element fill:#e1f5fe,stroke:#0277bd,stroke-width:1px,color:#000
+    classDef button fill:#ffccbc,stroke:#d84315,stroke-width:2px,color:#000
+
+    subgraph SettingsPanel ["Settings Panel"]
+        direction TB
+        
         subgraph Section1 [Devices]
             CamSelect[Camera Dropdown]
             MicSelect[Mic Dropdown]
         end
+        
         subgraph Section2 [Target]
             WindowSelect[Target Window Dropdown]
         end
+        
         subgraph Section3 [Adjust]
             SensSlider[Response Sensitivity]
         end
+        
         PauseButton[Global Pause Button]
     end
+
+    %% クラス適用
+    class SettingsPanel panel
+    class Section1,Section2,Section3 section
+    class CamSelect,MicSelect,WindowSelect,SensSlider element
+    class PauseButton button
 ```
 
 ## 3. 状態遷移表示
