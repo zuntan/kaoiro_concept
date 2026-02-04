@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background: Rounded Square (Happy Yellow) -->
+  <rect x="32" y="32" width="448" height="448" rx="128" ry="128" fill="#FFEB3B" />
+  
+  <!-- "Y" Eye -->
+  <path d="M144 176 L192 240 L240 176 M192 240 L192 288" fill="none" stroke="#66BB6A" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- "N" Eye -->
+  <path d="M288 288 L288 176 L368 288 L368 176" fill="none" stroke="#EF5350" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Smile Mouth -->
+  <path d="M160 368 Q256 432 352 368" fill="none" stroke="#1E1E1E" stroke-width="32" stroke-linecap="round" />
+</svg>
