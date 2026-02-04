@@ -9,6 +9,9 @@ kaoiroは、AIとの対話を「もっと自然に、もっとカジュアルに
 すべてのユーザーにとっては、AIと感情を通わせる新しいコミュニケーションの扉として。
 「顔色」を読み取るテクノロジーが、あなたとAIの距離を縮めます。
 
+👉 **[コンセプト詳細はこちら](./consept.md)**
+
+
 ---
 
 ## Assets (Logo Drafts)
@@ -47,7 +50,6 @@ kaoiroは、AIとの対話を「もっと自然に、もっとカジュアルに
 | :--- | :--- | :---: |
 | **[architecture.md](./architecture.md)** | **アーキテクチャ設計**。システム構成図、コンポーネント分割、データフロー（Native/WASM）。 | ◎ |
 | **[tech_issues.md](./tech_issues.md)** | **技術課題**。OpenCVのビルド、Wayland対応、音声認識の多言語化など。 | ○ |
-| **[src_structure.md](./src_structure.md)** | **ソースコード構成**。Rustプロジェクトのディレクトリ構造とモジュールの役割。 | ○ |
 | **[error_logging.md](./error_logging.md)** | **エラー処理・ログ**。エラーハンドリングの方針、ログレベル、プライバシー配慮。 | |
 
 ## 3. UI/UX・デザイン
