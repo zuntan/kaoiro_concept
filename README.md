@@ -15,16 +15,16 @@ kaoiroは、AIとの対話を「もっと自然に、もっとカジュアルに
 開発におけるアイコン・ロゴデザインのたたき台。
 
 - **Logo A: The Face** (直球)
-    ![Logo A](./kaoiro_logo_a.svg)
+    <img src="./kaoiro_logo_a.svg" width="128">
     - 丸みを帯びた四角（スクワークル）の中に、シンプルなラインで描かれた「ウインクする顔」。親しみやすさ重視。
 - **Logo B: Communication** (対話)
-    ![Logo B](./kaoiro_logo_b.svg)
+    <img src="./kaoiro_logo_b.svg" width="128">
     - 「吹き出し」の形と「顔」を融合させたデザイン。AIとの対話を表現。
 - **Logo C: Kaoiro Palette** (抽象)
-    ![Logo C](./kaoiro_logo_c.svg)
+    <img src="./kaoiro_logo_c.svg" width="128">
     - 「顔色」という言葉から、感情の変化をグラデーション（ミントグリーン⇔コーラルレッド）で表現したミニマルな円形アイコン。
 - **Logo D: YES/NO Accent** (機能強調)
-    ![Logo D](./kaoiro_logo_d.svg)
+    <img src="./kaoiro_logo_d.svg" width="128">
     - 目の部分を「Y」と「N」のアルファベットで構成した遊び心のあるデザイン。ツールの主目的であるYES/NO入力をダイレクトに表現。
 
 ---
