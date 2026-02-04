@@ -14,22 +14,22 @@ graph TD
 
     subgraph "Shared Core (Native & WASM)"
         direction TB
-        GestureLogic[Gesture Logic]
-        SharedState[Shared State (Arc RwLock)]
-        UI_Components[egui Components]
+        GestureLogic["Gesture Logic"]
+        SharedState["Shared State (Arc RwLock)"]
+        UI_Components["egui Components"]
     end
 
     subgraph "Native Specific"
         direction TB
-        OpenCV[OpenCV Camera]
-        Enigo[Enigo Input]
-        EframeNative[eframe Native Runner]
+        OpenCV["OpenCV Camera"]
+        Enigo["Enigo Input"]
+        EframeNative["eframe Native Runner"]
     end
 
     subgraph "WASM Specific (Future)"
         direction TB
-        WebCam[Web API Camera]
-        WebCanvas[Web Canvas Runner]
+        WebCam["Web API Camera"]
+        WebCanvas["Web Canvas Runner"]
     end
 
     %% クラス適用
