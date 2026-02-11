@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 540">
+  <rect x="0" y="0" width="200" height="540" rx="40" ry="40" fill="#1E1E1E" fill-opacity="0.85" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1.5" />
+  <g transform="translate(100, 100)">
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="5" />
+    <path d="M0 -88 A88 88 0 0 1 75 45" fill="none" stroke="#42A5F5" stroke-width="6" stroke-linecap="round" filter="drop-shadow(0 0 4px #42A5F5)" />
+    <circle cx="0" cy="0" r="82" fill="#111111" fill-opacity="0.95" />
+    <g opacity="0.95">
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#FFFFFF" stroke-width="4" />
+      <circle cx="-22" cy="-10" r="6" fill="#FFFFFF" />
+      <circle cx="22" cy="-10" r="6" fill="#FFFFFF" />
+      <path d="M-28 25 Q0 45 28 25" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    </g>
+  </g>
+  <g transform="translate(160, 175)">
+    <circle cx="0" cy="0" r="32" fill="#1E1E1E" stroke="#1E1E1E" stroke-width="6" />
+    <defs><clipPath id="pipViewV9Settings"><circle cx="0" cy="0" r="30" /></clipPath></defs>
+    <circle cx="0" cy="0" r="30" fill="#333333" />
+    <g clip-path="url(#pipViewV9Settings)" opacity="0.5">
+       <rect x="-35" y="-35" width="70" height="70" fill="#444444" />
+       <circle cx="0" cy="-5" r="14" fill="#FFFFFF" />
+       <path d="M-18 32 Q0 15 18 32" fill="#FFFFFF" />
+    </g>
+  </g>
+  <rect x="65" y="195" width="70" height="20" rx="10" ry="10" fill="#000000" fill-opacity="0.6" />
+  <text x="100" y="209" font-family="sans-serif" font-weight="bold" font-size="9" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">SETTINGS</text>
+  <g transform="translate(45, 225)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" fill-opacity="0.08" />
+    <g transform="translate(-8, -8) scale(0.7)">
+      <path d="M12 2 L12 14 M5 10 A7 7 0 0 0 19 10" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <line x1="4" y1="4" x2="20" y2="20" stroke="#EF5350" stroke-width="2.5" />
+    </g>
+  </g>
+  <g transform="translate(155, 225)">
+    <circle cx="0" cy="0" r="18" fill="#42A5F5" fill-opacity="0.3" stroke="#42A5F5" stroke-width="2" />
+    <g transform="translate(-8, -8) scale(0.7)">
+      <circle cx="12" cy="12" r="4" stroke="#FFFFFF" stroke-width="2.5" fill="none" />
+      <path d="M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+  <line x1="20" y1="265" x2="180" y2="265" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1" />
+  <g transform="translate(15, 285)">
+    <g>
+      <text x="0" y="-6" font-family="sans-serif" font-size="8" fill="#90A4AE" font-weight="bold">CAMERA PREVIEW</text>
+      <rect x="0" y="0" width="170" height="95" rx="8" ry="8" fill="#333333" />
+      <circle cx="85" cy="42" r="20" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2" />
+      <text x="85" y="78" font-family="sans-serif" font-size="8" fill="#FFFFFF" fill-opacity="0.4" text-anchor="middle">Face Detected</text>
+    </g>
+    <g transform="translate(0, 110)">
+      <text x="0" y="0" font-family="sans-serif" font-size="9" fill="#90A4AE">Source</text>
+      <rect x="0" y="4" width="170" height="24" rx="6" ry="6" fill="#111111" stroke="#FFFFFF" stroke-opacity="0.1" />
+      <text x="10" y="20" font-family="sans-serif" font-size="9" fill="#FFFFFF">Logitech Brio 4K...</text>
+      <path d="M155 12 L162 20 L148 20 Z" fill="#FFFFFF" fill-opacity="0.5" transform="rotate(180, 155, 16)"/>
+      <text x="0" y="42" font-family="sans-serif" font-size="9" fill="#90A4AE">Sensitivity</text>
+      <rect x="0" y="50" width="170" height="4" rx="2" ry="2" fill="#111111" />
+      <rect x="0" y="50" width="110" height="4" rx="2" ry="2" fill="#42A5F5" />
+      <circle cx="110" cy="52" r="8" fill="#FFFFFF" />
+      <g transform="translate(0, 75)">
+         <text x="0" y="10" font-family="sans-serif" font-size="10" fill="#FFFFFF">Auto-Submit</text>
+         <rect x="135" y="0" width="35" height="16" rx="8" ry="8" fill="#66BB6A" />
+         <circle cx="160" cy="8" r="6" fill="#FFFFFF" />
+         <text x="0" y="35" font-family="sans-serif" font-size="10" fill="#FFFFFF">Sound FX</text>
+         <rect x="135" y="25" width="35" height="16" rx="8" ry="8" fill="#333333" />
+         <circle cx="144" cy="33" r="6" fill="#FFFFFF" fill-opacity="0.5" />
+      </g>
+    </g>
+  </g>
+</svg>

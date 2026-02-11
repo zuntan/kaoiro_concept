@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120">
+  <!-- Avatar Set: Cute Flower (v2.7: Removed Pupils) -->
+  
+  <!-- 1. IDLE (Blue/Gray) -->
+  <g transform="translate(50, 50)">
+    <path d="M0 45 Q0 20 0 0" fill="none" stroke="#90A4AE" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(0, 45)">
+      <path d="M0 0 Q-15 -5 -20 -15 Q-15 -25 0 0" fill="#90A4AE" />
+      <path d="M0 0 Q15 -5 20 -15 Q15 -25 0 0" fill="#90A4AE" />
+    </g>
+    <g transform="translate(0, -5)">
+      <g fill="#1E1E1E" stroke="#90A4AE" stroke-width="2">
+        <circle cx="0" cy="-22" r="8" />
+        <circle cx="22" cy="-8" r="8" />
+        <circle cx="14" cy="18" r="8" />
+        <circle cx="-14" cy="18" r="8" />
+        <circle cx="-22" cy="-8" r="8" />
+      </g>
+      <circle cx="0" cy="0" r="18" fill="#1E1E1E" stroke="#90A4AE" stroke-width="2" />
+      <g fill="none" stroke="#90A4AE" stroke-width="2" stroke-linecap="round">
+        <!-- Simple Eyes without pupils -->
+        <circle cx="-6" cy="-2" r="2.5" fill="#90A4AE" stroke="none" />
+        <circle cx="6" cy="-2" r="2.5" fill="#90A4AE" stroke="none" />
+        <path d="M-4 6 Q0 9 4 6" />
+      </g>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#90A4AE" text-anchor="middle">IDLE</text>
+  </g>
+
+  <!-- 2. YES (Mint Green) -->
+  <g transform="translate(150, 50)">
+    <path d="M0 45 Q-10 20 0 0" fill="none" stroke="#66BB6A" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(0, 45)">
+      <path d="M0 0 Q-20 -10 -25 -25 Q-10 -30 0 0" fill="#66BB6A" />
+      <path d="M0 0 Q20 -10 25 -25 Q10 -30 0 0" fill="#66BB6A" />
+    </g>
+    <g transform="translate(0, -5)">
+      <g fill="#1E1E1E" stroke="#66BB6A" stroke-width="2">
+        <ellipse cx="0" cy="-25" rx="10" ry="12" />
+        <ellipse cx="24" cy="-8" rx="12" ry="10" />
+        <ellipse cx="15" cy="20" rx="10" ry="12" />
+        <ellipse cx="-15" cy="20" rx="10" ry="12" />
+        <ellipse cx="-24" cy="-8" rx="12" ry="10" />
+      </g>
+      <circle cx="0" cy="0" r="18" fill="#1E1E1E" stroke="#66BB6A" stroke-width="2" />
+      <g fill="none" stroke="#66BB6A" stroke-width="2" stroke-linecap="round">
+        <path d="M-10 -2 Q-6 -8 -2 -2" />
+        <path d="M2 -2 Q6 -8 10 -2" />
+        <path d="M-6 6 Q0 14 6 6" />
+      </g>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#66BB6A" text-anchor="middle">YES</text>
+  </g>
+
+  <!-- 3. NO (Coral Red) -->
+  <g transform="translate(250, 50)">
+    <path d="M0 45 Q5 25 2 5" fill="none" stroke="#EF5350" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(0, 45)">
+      <path d="M0 0 Q-15 -2 -22 -8 Q-15 -15 0 0" fill="#EF5350" />
+      <path d="M0 0 Q15 -2 22 -8 Q15 -15 0 0" fill="#EF5350" />
+    </g>
+    <g transform="translate(2, 0)">
+      <g fill="#1E1E1E" stroke="#EF5350" stroke-width="2">
+        <ellipse cx="0" cy="-20" rx="6" ry="10" />
+        <ellipse cx="20" cy="-5" rx="10" ry="7" />
+        <ellipse cx="12" cy="15" rx="8" ry="10" />
+        <ellipse cx="-12" cy="15" rx="8" ry="10" />
+        <ellipse cx="-20" cy="-5" rx="10" ry="7" />
+      </g>
+      <circle cx="0" cy="0" r="18" fill="#1E1E1E" stroke="#EF5350" stroke-width="2" />
+      <g fill="none" stroke="#EF5350" stroke-width="2" stroke-linecap="round">
+        <path d="M-12 2 L-4 -2" />
+        <path d="M12 2 L4 -2" />
+        <path d="M-6 12 Q0 6 6 12" />
+        <path d="M-8 4 Q-10 10 -8 12 Q-6 10 -8 4 Z" fill="#EF5350" stroke="none" />
+      </g>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#EF5350" text-anchor="middle">NO</text>
+  </g>
+
+  <!-- 4. LOST (Amber) - Searching (Pupils removed) -->
+  <g transform="translate(350, 50)">
+    <path d="M0 45 Q0 20 0 0" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4" />
+    <g transform="translate(0, 45)">
+      <path d="M0 0 Q-15 -5 -20 -15 Q-15 -25 0 0" fill="#FFA726" />
+      <path d="M0 0 Q15 -5 20 -15 Q15 -25 0 0" fill="#FFA726" />
+    </g>
+    <g transform="translate(0, -5)">
+      <g fill="#1E1E1E" stroke="#FFA726" stroke-width="2" stroke-dasharray="2 2">
+        <circle cx="0" cy="-22" r="8" />
+        <circle cx="22" cy="-8" r="8" />
+        <circle cx="14" cy="18" r="8" />
+        <circle cx="-14" cy="18" r="8" />
+        <circle cx="-22" cy="-8" r="8" />
+      </g>
+      <circle cx="0" cy="0" r="18" fill="#1E1E1E" stroke="#FFA726" stroke-width="2" stroke-dasharray="6 4" />
+      <g fill="none" stroke="#FFA726" stroke-width="2" stroke-linecap="round">
+        <!-- Big Round Eyes without directions -->
+        <circle cx="-6" cy="-2" r="4.5" />
+        <circle cx="6" cy="-2" r="4.5" />
+        <circle cx="0" cy="8" r="2" />
+      </g>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#FFA726" text-anchor="middle">LOST</text>
+  </g>
+
+  <!-- 5. PAUSE (Gray) -->
+  <g transform="translate(450, 50)">
+    <path d="M0 45 L0 25" fill="none" stroke="#777777" stroke-width="3" stroke-linecap="round" />
+    <g transform="translate(0, 45)">
+      <path d="M0 0 Q-10 -15 -5 -25 Q0 -20 0 0" fill="#1E1E1E" stroke="#777777" stroke-width="2" />
+      <path d="M0 0 Q10 -15 5 -25 Q0 -20 0 0" fill="#1E1E1E" stroke="#777777" stroke-width="2" />
+    </g>
+    <g transform="translate(0, 5)">
+      <path d="M0 20 Q-15 5 0 -15 Q15 5 0 20 Z" fill="#1E1E1E" stroke="#777777" stroke-width="2" />
+      <text x="15" y="-10" font-family="sans-serif" font-weight="bold" font-size="12" fill="#777777" stroke="none">Z</text>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#777777" text-anchor="middle">PAUSE</text>
+  </g>
+</svg>

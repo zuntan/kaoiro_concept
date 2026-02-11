@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "clipboard-tool": {
+      "command": "npx",
+      "args": [
+        "ts-node",
+        "/home/junichi/.gemini/clipboard-mcp.mts"
+      ]
+    },
+    "obsidianMcpServer": {
+      "command": "nc",
+      "args": [
+        "127.0.0.1",
+        "28088"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "@upstash/context7-mcp"
+      ]
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
+    }
+  }
+}

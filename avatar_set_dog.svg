@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120">
+  <!-- Avatar Set: Cute Dog (v2.2: Seamless ear connections, rounded joints) -->
+  
+  <!-- 1. IDLE (Blue/Gray) - Face Only -->
+  <g transform="translate(50, 50)">
+    <!-- Ears (Behind Head) -->
+    <path d="M-25 -10 Q-45 0 -40 20 Q-30 25 -25 10 Z" fill="#1E1E1E" stroke="#90A4AE" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M25 -10 Q45 0 40 20 Q30 25 25 10 Z" fill="#1E1E1E" stroke="#90A4AE" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Head Outline -->
+    <path d="M-25 10 Q-35 -20 -15 -25 Q0 -30 15 -25 Q35 -20 25 10 L25 20 Q15 30 0 30 Q-15 30 -25 20 Z" fill="#1E1E1E" stroke="#90A4AE" stroke-width="3" stroke-linejoin="round" />
+    
+    <g fill="none" stroke="#90A4AE" stroke-width="3" stroke-linecap="round">
+      <circle cx="-10" cy="-5" r="3.5" fill="#90A4AE" stroke="none" />
+      <circle cx="10" cy="-5" r="3.5" fill="#90A4AE" stroke="none" />
+      <path d="M-6 0 Q0 -3 6 0 Q6 5 0 9 Q-6 5 -6 0 Z" fill="#90A4AE" />
+      <path d="M-6 12 Q0 18 6 12" />
+      <line x1="0" y1="9" x2="0" y2="15" />
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#90A4AE" text-anchor="middle">IDLE</text>
+  </g>
+
+  <!-- 2. YES (Mint Green) - Face Only -->
+  <g transform="translate(150, 50)">
+    <!-- Ears (Behind Head) -->
+    <path d="M-25 -15 Q-45 -5 -40 15 Q-30 20 -25 5 Z" fill="#1E1E1E" stroke="#66BB6A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M25 -15 Q45 -5 40 15 Q30 20 25 5 Z" fill="#1E1E1E" stroke="#66BB6A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Head -->
+    <path d="M-25 10 Q-35 -20 -15 -25 Q0 -30 15 -25 Q35 -20 25 10 L25 20 Q15 30 0 30 Q-15 30 -25 20 Z" fill="#1E1E1E" stroke="#66BB6A" stroke-width="3" stroke-linejoin="round" />
+    
+    <g fill="none" stroke="#66BB6A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <!-- > < Eyes -->
+      <path d="M-18 -10 L-10 -5 L-18 0" />
+      <path d="M 18 -10 L 10 -5 L 18 0" />
+      <path d="M-6 -2 Q0 -5 6 -2 Q6 3 0 7 Q-6 3 -6 -2 Z" fill="#66BB6A" />
+      <line x1="0" y1="7" x2="0" y2="13" />
+      <!-- Happy Mouth & Tongue -->
+      <path d="M-8 10 Q0 10 8 10" />
+      <path d="M-4 10 Q0 22 4 10" fill="#66BB6A" stroke="none" /> 
+      <path d="M-4 10 Q0 22 4 10" /> 
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#66BB6A" text-anchor="middle">YES</text>
+  </g>
+
+  <!-- 3. NO (Coral Red) - Sad Face with Eyes -->
+  <g transform="translate(250, 50)">
+    <!-- Ears (Behind Head) -->
+    <path d="M-25 5 Q-42 20 -32 35 Q-22 35 -25 15 Z" fill="#1E1E1E" stroke="#EF5350" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M25 5 Q42 20 32 35 Q22 35 25 15 Z" fill="#1E1E1E" stroke="#EF5350" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+    <!-- Head -->
+    <path d="M-25 10 Q-35 -20 -15 -25 Q0 -30 15 -25 Q35 -20 25 10 L25 20 Q15 30 0 30 Q-15 30 -25 20 Z" fill="#1E1E1E" stroke="#EF5350" stroke-width="3" stroke-linejoin="round" />
+    
+    <g fill="none" stroke="#EF5350" stroke-width="3" stroke-linecap="round">
+      <!-- Sad Droopy Eyes -->
+      <path d="M-18 0 L-8 -8" />
+      <path d="M18 0 L8 -8" />
+      <path d="M-6 4 Q0 1 6 4 Q6 9 0 13 Q-6 9 -6 4 Z" fill="#EF5350" />
+      <line x1="0" y1="13" x2="0" y2="19" />
+      <!-- Sad Mouth -->
+      <path d="M-10 22 Q0 15 10 22" />
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#EF5350" text-anchor="middle">NO</text>
+  </g>
+
+  <!-- 4. LOST (Amber) -->
+  <g transform="translate(350, 50)">
+    <g transform="rotate(-15)">
+      <!-- Ears (Behind Head) -->
+      <path d="M-25 -15 Q-45 -15 -45 5 Q-35 15 -25 5 Z" fill="#1E1E1E" stroke="#FFA726" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M25 -5 Q45 5 40 25 Q30 30 25 15 Z" fill="#1E1E1E" stroke="#FFA726" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+      <!-- Head -->
+      <path d="M-25 10 Q-35 -20 -15 -25 Q0 -30 15 -25 Q35 -20 25 10 L25 20 Q15 30 0 30 Q-15 30 -25 20 Z" fill="#1E1E1E" stroke="#FFA726" stroke-width="3" stroke-linejoin="round" />
+      
+      <g fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round">
+        <circle cx="-10" cy="-5" r="3.5" fill="#FFA726" stroke="none" />
+        <circle cx="10" cy="-5" r="3.5" fill="#FFA726" stroke="none" />
+        <path d="M-6 0 Q0 -3 6 0 Q6 5 0 9 Q-6 5 -6 0 Z" fill="#FFA726" />
+        <line x1="0" y1="9" x2="0" y2="15" />
+        <line x1="-5" y1="15" x2="5" y2="15" />
+      </g>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#FFA726" text-anchor="middle">LOST</text>
+  </g>
+
+  <!-- 5. PAUSE (Gray) -->
+  <g transform="translate(450, 50)">
+    <path d="M-30 20 Q-30 -20 0 -20 Q30 -20 30 20 Q30 35 15 35 L-15 35 Q-30 35 -30 20" fill="#1E1E1E" stroke="#777777" stroke-width="3" stroke-linejoin="round" />
+    <path d="M-10 -10 Q-30 0 -20 20 Q-10 25 0 10 Z" fill="#1E1E1E" stroke="#777777" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" transform="scale(1.2) translate(-2, -2)" />
+    <g fill="none" stroke="#777777" stroke-width="3" stroke-linecap="round">
+      <ellipse cx="15" cy="5" rx="5" ry="3" fill="#777777" stroke="none" />
+      <text x="20" y="-15" font-family="sans-serif" font-weight="bold" font-size="12" fill="#777777" stroke="none">Z</text>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#777777" text-anchor="middle">PAUSE</text>
+  </g>
+</svg>

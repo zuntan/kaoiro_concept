@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+  <!-- Main Widget Gadget (Hover State) -->
+  <rect x="0" y="0" width="200" height="260" rx="40" ry="40" fill="#1E1E1E" fill-opacity="0.85" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" />
+  
+  <!-- Content Area (Dimmed slightly on hover) -->
+  <g opacity="0.8">
+    <g transform="translate(100, 105)">
+      <circle cx="0" cy="0" r="88" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="5" />
+      <path d="M0 -88 A88 88 0 0 1 75 45" fill="none" stroke="#42A5F5" stroke-width="6" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="82" fill="#111111" fill-opacity="0.95" />
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#FFFFFF" stroke-width="4" />
+      <circle cx="-22" cy="-10" r="6" fill="#FFFFFF" />
+      <circle cx="22" cy="-10" r="6" fill="#FFFFFF" />
+      <path d="M-28 25 Q0 45 28 25" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- 1. Drag Handle / Grip (Visual Hint for Moveability) -->
+  <g transform="translate(100, 15)" opacity="0.6">
+    <circle cx="-8" cy="0" r="1.5" fill="#FFFFFF" />
+    <circle cx="0" cy="0" r="1.5" fill="#FFFFFF" />
+    <circle cx="8" cy="0" r="1.5" fill="#FFFFFF" />
+    <circle cx="-8" cy="5" r="1.5" fill="#FFFFFF" />
+    <circle cx="0" cy="5" r="1.5" fill="#FFFFFF" />
+    <circle cx="8" cy="5" r="1.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- 2. Close Button (X) - Top Right -->
+  <g transform="translate(175, 25)">
+    <circle cx="0" cy="0" r="12" fill="#EF5350" fill-opacity="0.9" />
+    <path d="M-4 -4 L4 4 M4 -4 L-4 4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. Standard Controls (Keep visible) -->
+  <g transform="translate(45, 235)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" fill-opacity="0.1" />
+    <g transform="translate(-8, -8) scale(0.7)">
+      <path d="M12 2 L12 14 M5 10 A7 7 0 0 0 19 10" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <line x1="4" y1="4" x2="20" y2="20" stroke="#EF5350" stroke-width="2.5" />
+    </g>
+  </g>
+  <g transform="translate(155, 235)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" fill-opacity="0.1" />
+    <g transform="translate(-8, -8) scale(0.7)">
+      <circle cx="12" cy="12" r="4" stroke="#FFFFFF" stroke-width="2.5" fill="none" />
+      <path d="M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

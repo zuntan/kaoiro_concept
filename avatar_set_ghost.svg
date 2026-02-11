@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120">
+  <!-- Avatar Set: Cute Ghost (v1.1: Removed Pupils) -->
+  
+  <!-- 1. IDLE (Blue/Gray) -->
+  <g transform="translate(50, 50)">
+    <path d="M-35 35 Q-35 -45 0 -45 Q35 -45 35 35 Q35 45 25 35 Q15 25 10 35 Q5 45 0 35 Q-5 25 -10 35 Q-15 45 -25 35 Q-35 25 -35 35 Z" fill="#1E1E1E" stroke="#90A4AE" stroke-width="3" />
+    <path d="M-32 10 Q-45 15 -35 25" fill="none" stroke="#90A4AE" stroke-width="3" stroke-linecap="round" />
+    <path d="M32 10 Q45 15 35 25" fill="none" stroke="#90A4AE" stroke-width="3" stroke-linecap="round" />
+    
+    <g fill="none" stroke="#90A4AE" stroke-width="3" stroke-linecap="round">
+      <circle cx="-12" cy="-10" r="4" fill="#90A4AE" stroke="none" />
+      <circle cx="12" cy="-10" r="4" fill="#90A4AE" stroke="none" />
+      <path d="M-6 8 Q0 12 6 8" />
+    </g>
+    <text x="0" y="55" font-family="sans-serif" font-size="10" fill="#90A4AE" text-anchor="middle">IDLE</text>
+  </g>
+
+  <!-- 2. YES (Mint Green) -->
+  <g transform="translate(150, 50)">
+    <path d="M-35 35 Q-35 -45 0 -45 Q35 -45 35 35 Q35 45 25 35 Q15 25 10 35 Q5 45 0 35 Q-5 25 -10 35 Q-15 45 -25 35 Q-35 25 -35 35 Z" fill="#1E1E1E" stroke="#66BB6A" stroke-width="3" />
+    <path d="M-32 5 Q-48 -15 -30 -25" fill="none" stroke="#66BB6A" stroke-width="3" stroke-linecap="round" />
+    <path d="M32 5 Q48 -15 30 -25" fill="none" stroke="#66BB6A" stroke-width="3" stroke-linecap="round" />
+    
+    <g fill="none" stroke="#66BB6A" stroke-width="4" stroke-linecap="round">
+      <path d="M-20 -15 Q-12 -28 -4 -15" />
+      <path d="M4 -15 Q12 -28 20 -15" />
+      <path d="M-10 5 Q0 20 10 5" />
+    </g>
+    <text x="0" y="55" font-family="sans-serif" font-size="10" fill="#66BB6A" text-anchor="middle">YES</text>
+  </g>
+
+  <!-- 3. NO (Coral Red) -->
+  <g transform="translate(250, 50)">
+    <path d="M-30 35 Q-30 -40 0 -40 Q30 -40 30 35 Q30 45 20 35 Q10 25 0 35 Q-10 25 -20 35 Q-30 45 -30 35 Z" fill="#1E1E1E" stroke="#EF5350" stroke-width="3" />
+    <path d="M-28 15 L-12 25" fill="none" stroke="#EF5350" stroke-width="3" stroke-linecap="round" />
+    <path d="M28 15 L12 25" fill="none" stroke="#EF5350" stroke-width="3" stroke-linecap="round" />
+    
+    <g fill="none" stroke="#EF5350" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-18 -18 L-8 -8 M-8 -18 L-18 -8" />
+      <path d="M18 -18 L8 -8 M8 -18 L18 -8" />
+      <path d="M-10 12 Q-5 5 0 12 Q5 19 10 12" />
+    </g>
+    <text x="0" y="55" font-family="sans-serif" font-size="10" fill="#EF5350" text-anchor="middle">NO</text>
+  </g>
+
+  <!-- 4. LOST (Amber) -->
+  <g transform="translate(350, 50)">
+    <path d="M-35 35 Q-35 -45 0 -45 Q35 -45 35 35 Q35 45 25 35 Q15 25 10 35 Q5 45 0 35 Q-5 25 -10 35 Q-15 45 -25 35 Q-35 25 -35 35 Z" fill="#1E1E1E" stroke="#FFA726" stroke-width="3" stroke-dasharray="6 4" />
+    <path d="M-32 15 Q-50 15 -40 0" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" />
+    <path d="M32 15 Q50 15 40 30" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" />
+    
+    <g fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round">
+      <!-- Pupils Removed (Only large hollow eyes) -->
+      <circle cx="-12" cy="-12" r="7" />
+      <circle cx="12" cy="-12" r="7" />
+      <circle cx="0" cy="12" r="4" />
+    </g>
+    <text x="0" y="55" font-family="sans-serif" font-size="10" fill="#FFA726" text-anchor="middle">LOST</text>
+  </g>
+
+  <!-- 5. PAUSE (Gray) -->
+  <g transform="translate(450, 50)">
+    <path d="M-38 35 Q-35 -25 0 -25 Q35 -25 38 35 Q35 40 20 35 Q0 30 -20 35 Q-35 40 -38 35 Z" fill="#1E1E1E" stroke="#777777" stroke-width="3" />
+    
+    <g fill="none" stroke="#777777" stroke-width="3" stroke-linecap="round">
+      <path d="M-22 -5 Q-15 2 -8 -5" />
+      <path d="M8 -5 Q15 2 22 -5" />
+      <line x1="-5" y1="18" x2="5" y2="18" />
+      <text x="25" y="-15" font-family="sans-serif" font-weight="bold" font-size="14" fill="#777777" stroke="none">Z</text>
+    </g>
+    <text x="0" y="55" font-family="sans-serif" font-size="10" fill="#777777" text-anchor="middle">PAUSE</text>
+  </g>
+</svg>

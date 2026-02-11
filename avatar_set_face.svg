@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120">
+  <!-- Avatar Set: Default Face (v1.2: Standardized Stroke Width) -->
+  
+  <!-- 1. IDLE (Blue/Gray) -->
+  <g transform="translate(50, 50)">
+    <circle cx="0" cy="0" r="40" fill="#1E1E1E" stroke="#90A4AE" stroke-width="3" />
+    <g fill="none" stroke="#90A4AE" stroke-width="3" stroke-linecap="round">
+      <circle cx="-14" cy="-6" r="4" fill="#90A4AE" stroke="none" />
+      <circle cx="14" cy="-6" r="4" fill="#90A4AE" stroke="none" />
+      <path d="M-18 18 Q0 32 18 18" />
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#90A4AE" text-anchor="middle">IDLE</text>
+  </g>
+
+  <!-- 2. YES (Mint Green) -->
+  <g transform="translate(150, 50)">
+    <circle cx="0" cy="0" r="40" fill="#1E1E1E" stroke="#66BB6A" stroke-width="3" />
+    <g fill="none" stroke="#66BB6A" stroke-width="3" stroke-linecap="round">
+      <path d="M-22 -10 Q-14 -20 -6 -10" />
+      <path d="M6 -10 Q14 -20 22 -10" />
+      <path d="M-20 15 Q0 40 20 15" />
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#66BB6A" text-anchor="middle">YES</text>
+  </g>
+
+  <!-- 3. NO (Coral Red) -->
+  <g transform="translate(250, 50)">
+    <circle cx="0" cy="0" r="40" fill="#1E1E1E" stroke="#EF5350" stroke-width="3" />
+    <g fill="none" stroke="#EF5350" stroke-width="3" stroke-linecap="round">
+      <path d="M-22 -15 Q-14 0 -6 -15" />
+      <path d="M6 -15 Q14 0 22 -15" />
+      <path d="M-20 25 Q0 10 20 25" />
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#EF5350" text-anchor="middle">NO</text>
+  </g>
+
+  <!-- 4. LOST (Amber) -->
+  <g transform="translate(350, 50)">
+    <circle cx="0" cy="0" r="40" fill="#1E1E1E" stroke="#FFA726" stroke-width="3" stroke-dasharray="6 4" />
+    <g fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round">
+      <circle cx="-14" cy="-5" r="6" />
+      <circle cx="14" cy="-5" r="6" />
+      <line x1="-15" y1="20" x2="15" y2="20" />
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#FFA726" text-anchor="middle">LOST</text>
+  </g>
+
+  <!-- 5. PAUSE (Gray) -->
+  <g transform="translate(450, 50)">
+    <circle cx="0" cy="0" r="40" fill="#1E1E1E" stroke="#777777" stroke-width="3" />
+    <g fill="none" stroke="#777777" stroke-width="3" stroke-linecap="round">
+      <path d="M-20 -5 Q-12 5 -4 -5" />
+      <path d="M4 -5 Q12 5 20 -5" />
+      <circle cx="0" cy="20" r="4" />
+      <text x="25" y="-20" font-family="sans-serif" font-weight="bold" font-size="12" fill="#777777" stroke="none">Z</text>
+    </g>
+    <text x="0" y="65" font-family="sans-serif" font-size="10" fill="#777777" text-anchor="middle">PAUSE</text>
+  </g>
+</svg>
