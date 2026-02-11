@@ -11,7 +11,8 @@
 ## 2. メインウィンドウのステート定義
 
 ### 2.1. 待機中 (Idle / Listening)
-![Idle Mockup](ui_mockup_idle.svg)
+<img src="ui_mockup_idle.svg" width="150">
+
 - **概要**: ユーザーを見守り、ジェスチャーを待っている状態。
 - **視覚的特徴**:
     - **Hero Icon**: メインエリアいっぱいに広がる線画の顔アイコン。表情は穏やか。
@@ -19,7 +20,8 @@
     - **PiP (Picture in Picture)**: 右下に小さくカメラ映像（シルエット加工済み）を表示し、認識状況を確認可能。
 
 ### 2.2. YES判定 (Action Success)
-![Success Mockup](ui_mockup_yes.svg)
+<img src="ui_mockup_yes.svg" width="165">
+
 - **概要**: 肯定的なジェスチャー（頷き）を検知した瞬間。
 - **演出**:
     - **Glow**: 全体がミントグリーン (#66BB6A) に強く発光。
@@ -27,7 +29,8 @@
     - **Label**: 「YES SENT!」と明確にフィードバック。
 
 ### 2.3. NO判定 (Rejected)
-![No Mockup](ui_mockup_no.svg)
+<img src="ui_mockup_no.svg" width="165">
+
 - **概要**: 否定的なジェスチャー（首振り）を検知した瞬間。
 - **演出**:
     - **Glow**: コーラルレッド (#EF5350) に発光。
@@ -35,7 +38,8 @@
     - **Label**: 「NO SENT!」と表示。
 
 ### 2.4. 見失った状態 (Lost)
-![Lost Mockup](ui_mockup_lost.svg)
+<img src="ui_mockup_lost.svg" width="150">
+
 - **概要**: 顔がカメラ範囲外に出た、または遮られた状態。
 - **演出**:
     - **Color**: アンバー/イエロー (#FFA726) で注意喚起。
@@ -43,7 +47,8 @@
     - **Ring**: 破線（Dashed）になり、接続が不安定であることを示唆。
 
 ### 2.5. 一時停止 (Paused)
-![Pause Mockup](ui_mockup_pause.svg)
+<img src="ui_mockup_pause.svg" width="150">
+
 - **概要**: ユーザー操作により機能を停止中。
 - **演出**:
     - **Color**: 彩度を落としたグレー (#90A4AE) と、薄暗い背景。
@@ -51,7 +56,8 @@
     - **Button**: 左下のミュートボタンがアクティブ（赤）になり、停止中であることを強調。
 
 ### 2.6. ホバー状態 (Hover State)
-![Hover Mockup](ui_mockup_hover.svg)
+<img src="ui_mockup_hover.svg" width="150">
+
 - **概要**: ウィンドウ操作を行うためにマウスを重ねた状態。
 - **視覚的特徴**:
     - **Overlay Controls**: 右上に「閉じるボタン(X)」、上部中央に「ドラッグハンドル(Grip)」がフェードイン。
@@ -59,7 +65,8 @@
     - **Feedback**: アバターエリアがわずかに暗くなり、コントロールの視認性が向上。
 
 ## 3. 設定パネル (Settings)
-![Settings Mockup](ui_mockup_settings.svg)
+<img src="ui_mockup_settings.svg" width="150">
+
 - **概要**: 詳細設定を行うための展開モード。
 - **特徴**:
     - **Base Plate**: 縦に大きく展開し、コントロールを表示。
@@ -71,3 +78,21 @@
 - **Auto-Hide Controls**: マウスが離れると操作用ボタン（閉じる、ドラッグハンドル）は自動的にフェードアウトし、ミニマルな外観に戻る。
 - **PiP Swap**: サブビュー（小）をクリックすると、メインビュー（大）と入れ替わるアニメーション。
 - **Button Hover**: 右下の設定ボタンや左下のミュートボタンは、ホバー時に少し拡大・明度アップする。
+
+## 5. アバターバリエーション
+ユーザーの好みに合わせて選択可能な5種類のアバターセット。
+
+### 5.1. デフォルト (Face)
+<img src="avatar_set_face.svg" width="600">
+
+### 5.2. いぬ (Dog)
+<img src="avatar_set_dog.svg" width="600">
+
+### 5.3. ねこ (Cat)
+<img src="avatar_set_cat.svg" width="600">
+
+### 5.4. おはな (Flower)
+<img src="avatar_set_flower.svg" width="600">
+
+### 5.5. ゆうれい (Ghost)
+<img src="avatar_set_ghost.svg" width="600">
