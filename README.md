@@ -51,12 +51,16 @@ kaoiroは、AIとの対話を「もっと自然に、もっとカジュアルに
 | **[consept.md](./consept.md)** | **コンセプト**。ビジョン「Casual AI Communication」、ターゲット層、コアバリュー。 | ○ |
 | **[proposal.md](./proposal.md)** | **提案書**。プロジェクトの背景、解決策、期待される効果、技術的優位性. | |
 | **[benchmarking.md](./benchmarking.md)** | **競合調査**。類似ツールとの比較と、kaoiro独自の強み（ポジショニング）. | |
+| **[glossary.md](./glossary.md)** | **用語集**。kaoiro、Avatar、KaoMotion 等の定義。 | ○ |
+| **[mindmap.md](./mindmap.md)** | **マインドマップ**。プロジェクト全体の構成要素の視覚的俯瞰。 | |
 
 ## 2. 設計・アーキテクチャ
 | ファイル名 | 説明 | 必読 |
 | :--- | :--- | :---: |
-| **[architecture.md](./architecture.md)** | **アーキテクチャ設計**。システム構成図、コンポーネント分割、データフロー（Native/WASM）。 | ◎ |
-| **[tech_issues.md](./tech_issues.md)** | **技術課題**。OpenCVのビルド、Wayland対応、音声認識の多言語化など。 | ○ |
+| **[architecture.md](./architecture.md)** | **アーキテクチャ設計**。システム構成図、コンポーネント分割、データフロー（デスクトップ版/ブラウザ拡張機能版）。 | ◎ |
+| **[gesture_engine.md](./gesture_engine.md)** | **ジェスチャー判定ロジック**。RelativePositionStrategy, MLStrategy等の詳細定義。 | ◎ |
+| **[voice_integration.md](./voice_integration.md)** | **音声認識・コマンド統合**。Vosk/Web Speech API を用いたハンズフリー拡張。 | ○ |
+| **[tech_issues.md](./tech_issues.md)** | **技術課題**。ONNX推論の最適化、Wayland対応、音声認識の多言語化など。 | ○ |
 | **[error_logging.md](./error_logging.md)** | **エラー処理・ログ**。エラーハンドリングの方ゼン、ログレベル、プライバシー配慮. | |
 
 ## 3. UI/UX・デザイン

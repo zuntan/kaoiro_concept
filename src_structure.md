@@ -1,54 +1,102 @@
-# ソースコード構造案 (src_structure.md)
+# ソースコード構造 (src_structure.md)
 
-`egui` (eframe) を採用し、Native版とWASM版でコードを最大限共有するためのディレクトリ構成案。
+デスクトップ版/ブラウザ拡張機能版 両対応を見据えた、シンプルかつ実践的な Cargo Workspace 構成。
+過度な分割を避け、共通部分は `kaoiro-lib` に集約する。
 
-## 1. 構成図
+## 1. ワークスペース構成 (Workspace Structure)
 
 ```text
 kaoiro/
-├── Cargo.toml
-├── Makefile.toml           # cargo-make用タスク定義
-├── src/
-│   ├── main.rs             # Native版エントリーポイント
-│   ├── lib.rs              # WASM版/共通ライブラリのルート
-│   ├── app.rs              # メインアプリケーション（eframe::App実装）
-│   ├── core/               # プラットフォーム非依存のロジック
-│   │   ├── mod.rs
-│   │   ├── gesture.rs      # 頷き・首振り判定アルゴリズム
-│   │   ├── state.rs        # 共有状態 (IDLE/YES/NO等)
-│   │   └── privacy.rs      # 画像加工ロジックのインターフェース
-│   ├── ui/                 # egui コンポーネント
-│   │   ├── mod.rs
-│   │   ├── widgets.rs      # カスタムウィジェット（ボタン、スライダー）
-│   │   ├── panels.rs       # 設定パネル、メインパネルのレイアウト
-│   │   └── icons.rs        # SVGアイコンの埋め込み・描画
-│   └── platform/           # プラットフォーム依存の実装
-│       ├── mod.rs
-│       ├── native/         # OpenCVカメラ, Enigo入力
-│       └── web/            # web_sysカメラ, DOM操作
-├── extension/              # ブラウザ拡張機能用アセット
-│   ├── manifest.json
-│   └── pkg/                # wasm-packの出力先
-└── assets/                 # SVG, フォント等の静的リソース
+├── Cargo.toml              # Workspace 定義
+├── kaoiro-lib/             # [Shared] 共通ロジック & UIコンポーネント
+├── kaoiro-desktop/         # [Desktop] デスクトップ版エントリーポイント
+├── kaoiro-web/             # [WASM]   ブラウザ拡張機能版エントリーポイント & Worker
+├── kaoiro-assets/          # [Shared] 埋め込みアセット (SVG, ONNXモデル)
+└── ...
 ```
 
-## 2. 各ディレクトリの役割
+## 2. 各クレートの責務詳細
 
-### 2.1. `src/core/`
-UIやプラットフォームから独立した純粋な計算・ロジック層。
-- `gesture.rs`: 顔の座標データを受け取り、時間軸での変化から「頷き」か「首振り」かを返すステートマシン。
-- `state.rs`: `Arc<RwLock<AppData>>` 等で管理される、アプリ全体の共有ステート。
+### 2.1. `kaoiro-lib` (Library)
+アプリケーションの中核。ロジックとUIの両方を管理する。
+Web Worker等のUI不要環境では、UI関連の関数を呼び出さないことで、リンカによるDead Code Elimination（不要コード削除）に委ねる。
 
-### 2.2. `src/ui/`
-`egui` を用いた描画ロジック。
-- プラットフォームに依存せず、`egui::Ui` オブジェクトに対して描画命令を出す。
-- `icons.rs`: 準備した `avatar_set_*.svg` を読み込み、状態に合わせて描画する。
+- **主要な依存**:
+    - `egui`: 即時モードGUIライブラリ。軽量で高速な描画。
+    - `nalgebra`: 線形代数ライブラリ。ジェスチャーの幾何学的判定に使用。
+    - `serde`: データのシリアライズ・デシリアライズ（設定保存等）。
+- **内容**:
+    - `gesture/`: 判定ロジック (`RelativePositionStrategy` 等)。
+    - `state/`: アプリケーションの状態管理。
+    - `ui/`: UIコンポーネント (`AvatarWidget`, `SettingsPanel`)。
 
-### 2.3. `src/platform/`
-カメラ映像の取得と、最終的な「YES/NO」の送信（キーストロークまたはDOM操作）を、ターゲットプラットフォームに合わせて切り替える。
-- `native/`: OpenCVを用いてカメラバッファを取得。
-- `web/`: `web_sys` を通じてブラウザの `getUserMedia` を呼び出し。
+### 2.2. `kaoiro-desktop` (Binary)
+デスクトップ版の具体的な実装。
+- **主要な依存**:
+    - `ort`: ONNX Runtime の Rust バインディング。高速な推論エンジン。
+    - `nokhwa`: クロスプラットフォームなカメラアクセスライブラリ。
+    - `vosk`: オフライン音声認識エンジン。
+    - `enigo`: OSレベルでのキー入力シミュレーション。
+- **内容**:
+    - `main.rs`: アプリ起動、ウィンドウ設定。
+    - `bridge/`: カメラ・マイク入力のアダプタ。
+    - `mcp/`: MCPサーバー機能。
 
-## 3. 実装上のポイント
-- **Conditional Compilation**: `#[cfg(target_arch = "wasm32")]` を活用し、依存関係をクリーンに保つ。
-- **Asynchronous Processing**: カメラ映像の取得や重い画像処理は、GUIスレッドをブロックしないよう非同期（または別スレッド）で実行し、結果を `SharedState` 経由で UI に伝える。
+### 2.3. `kaoiro-web` (Binary / CDylib)
+ブラウザ拡張機能版の具体的な実装。
+- **主要な依存**:
+    - `tract-onnx`: Rust 純製の ONNX 推論エンジン。WASM環境に最適。
+    - `wasm-bindgen`: Rust と JavaScript の相互連携用ツール。
+    - `web-sys`: Web API (DOM, Canvas, Web Cam) へのアクセス。
+- **内容**:
+    - `lib.rs`: WASMのエントリーポイント（UIスレッド）。
+    - `worker.rs`: 推論用 Web Worker のエントリーポイント。
+
+### 2.4. `kaoiro-assets` (Library)
+バイナリに静的に埋め込むリソースを一元管理するクレート。
+`include_bytes!` マクロを使用し、コンパイル時に全てのデータをメモリ上に展開可能な状態で保持する。
+
+- **内容**:
+    - `src/lib.rs`: 各アセットへのアクセサ定数を公開。
+        - `pub const FACE_DETECTION_MODEL: &[u8] = include_bytes!("../models/face_detection_short_range.onnx");`
+        - `pub const AVATAR_FACE_SVG: &[u8] = include_bytes!("../images/avatar_set_face.svg");`
+    - `models/`: ONNXモデルファイル。
+        - `face_detection_short_range.onnx`: MediaPipe Face Detection (Short Range) のモデル。
+    - `images/`: UI用画像アセット。
+        - `avatar_set_*.svg`: アバターのバリエーション（Face, Dog, Cat, etc.）。
+    - `scripts/`: アセット管理補助スクリプト。
+        - `prepare_models.py`: モデルのダウンロードからONNX変換までを一括実行する Python スクリプト。
+
+## 3. ディレクトリ詳細マップ
+
+```text
+kaoiro/
+├── kaoiro-assets/
+│   ├── src/
+│   │   └── lib.rs      # include_bytes! definitions
+│   ├── models/         # .onnx files
+│   ├── images/         # .svg files
+│   └── scripts/        # Conversion & Download scripts
+│
+├── kaoiro-lib/
+│   └── src/
+│       ├── lib.rs
+│       ├── gesture/    # Logic
+│       ├── state.rs    # State
+│       └── ui/         # UI
+│           ├── mod.rs
+│           ├── avatar.rs
+│           └── app.rs
+│
+├── kaoiro-desktop/
+│   └── src/
+│       ├── main.rs
+│       └── ...
+│
+└── kaoiro-web/
+    ├── index.html
+    ├── Trunk.toml
+    └── src/
+        ├── lib.rs      # Main Thread Entry
+        └── worker.rs   # Worker Thread Entry
+```
