@@ -23,7 +23,7 @@
 **目標**: ブラウザ拡張機能としての基本機能実装とAIチャット連携。
 **規模**: 約 3単位
 **主要機能**:
-- **ブラウザ拡張機能版の推論 (WASM)**: `tract-onnx` と Web Worker による非同期判定エンジンの構築。
+- **WASM推論**: `tract-onnx` と Web Worker による非同期判定エンジンの構築。
 - **Extension Integration**: サイドパネルUIとコンテンツスクリプト間の通信、タブ操作（文字注入）の実装。
 
 ### Phase 4: Voice Synergy & Store Alpha (音声連携と早期公開)
@@ -31,9 +31,9 @@
 **主要機能**:
 - **音声入力/コマンド**: デスクトップ(Vosk)およびブラウザ(Web Speech API / vosk-browser)への対応。
 
-### Phase 5: AI デスクトップ Ecosystem (MCP連携と品質強化)
+### Phase 5: AI Desktop Ecosystem (MCP連携と品質強化)
 **主要機能**:
-- **MCP対応 (デスクトップ版のみ)**: AIエージェントとの直接通信。
+- **MCP対応 (Desktop Only)**: AIエージェントとの直接通信。
 - **高度な演出**: 予告インジケータ、AI背景除去、表情認識の試験導入。
 
 ## 2. タスクリスト (直近フェーズ)
@@ -46,9 +46,11 @@
 - [ ] ブラウザ拡張機能版用モックプロジェクトの作成 (Trunk)
 
 ### 2.2. Phase 2: Desktop MVP
+- [ ] **CI/CD環境の構築**: GitHub Actions による自動テスト・Lint・ビルドフローの整備。
 - [ ] `ort` による顔検出モジュールの実装
 - [ ] `RelativePositionStrategy` の実装とキャリブレーション調整
 - [ ] `enigo` による入力送信の実装
+- [ ] **リリースフローの策定**: バージョニング規則と配布バイナリ作成手順の定義 (`RELEASE.md` 作成)。
 
 ## 3. リスク管理
 
